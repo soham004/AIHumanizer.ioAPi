@@ -39,10 +39,10 @@ The client communicates with AIHumanizer.io's internal backend API by replicatin
 
 ### Authentication
 
-The application requires authentication tokens that are typically handled by the web browser when using the official website:
-1. **Token**: User authentication token obtained from browser session or provided via input
+The application uses a simple authentication system:
+1. **Token**: A free authentication token that is automatically generated when visiting the AIHumanizer.io website, even without creating an account or logging in
 
-These tokens must be manually extracted from browser developer tools when using the official AIHumanizer.io website.
+**Note**: The Cloudflare clearance token is not required for this implementation. The authentication token can be easily obtained by visiting the website and extracting it from the browser's network requests or developer tools.
 
 ## Installation and Setup
 
@@ -63,6 +63,13 @@ These tokens must be manually extracted from browser developer tools when using 
    ```
    TOKEN=your_authentication_token_here
    ```
+
+**How to obtain the token:**
+- Simply visit https://aihumanize.io in your browser
+- Open Developer Tools (F12) and go to the Network tab
+- Enter any text and submit it
+- Look for the request to `/dev/outstream` and find the token in the request payload
+- No account registration or login is required
 
 ## Usage
 
