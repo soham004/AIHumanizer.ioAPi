@@ -41,7 +41,6 @@ The client communicates with AIHumanizer.io's internal backend API by replicatin
 
 The application requires authentication tokens that are typically handled by the web browser when using the official website:
 1. **Token**: User authentication token obtained from browser session or provided via input
-2. **CF Clearance**: Cloudflare clearance token extracted from browser cookies for bypassing security measures
 
 These tokens must be manually extracted from browser developer tools when using the official AIHumanizer.io website.
 
