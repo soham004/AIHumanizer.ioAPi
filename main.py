@@ -3,7 +3,6 @@ import json
 import sseclient
 import dotenv
 import sys
-import time
 
 dotenv.load_dotenv()
 
